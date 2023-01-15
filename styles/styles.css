@@ -12,6 +12,9 @@
 /* common styles or utilities */
 
 main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background: #FFFFFF;
 }
 footer{
@@ -31,6 +34,7 @@ footer{
 
 section{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 /* header styles  */
 .header{
@@ -101,7 +105,8 @@ section{
 
 .features{
     top: 1407px;
-    margin-left: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
     
 }
 
@@ -135,3 +140,121 @@ section{
     color: #727272;
     margin-bottom: 24px;
 }
+
+/* features speciality styles  */
+
+.features-special-container{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 146px;
+
+}
+.features-special{
+    display: grid;
+    grid-template-rows: 2fr repeat(4, 1fr);
+    grid-row-gap: 24px;
+}
+
+.feature-special-details .feature-special-title{
+    left: 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.feature-special-details .feature-special-title > span{
+    width: 5px;
+    height: 106px;
+   
+    color: #FF900E;
+}
+.feature-special-details .feature-special-subtitle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+    margin-bottom: 24px;
+
+}
+
+.features-special .feature-special-details .feature-special-text{
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 24px;
+}
+.features-special-container .feature-special-img{
+    width: 100%;
+    height: auto;
+}
+
+
+.features-special-container .feature-special-img .feature-special-btn{
+    position: absolute;
+    width: 342px;
+    height: 200px;
+    left: 750px;
+    top: 3104px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+        
+} 
+
+/* architect projects styles */
+.architect-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.architect-projects .architect-projects-title{
+    position: absolute;
+    top: 3434px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 50px;
+}
+.architect-projects .architect-projects-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.architect-projects .architect-projects-img li{ 
+    list-style: none;
+}
+.architect-projects .architect-projects-img .architect-photo{
+    margin-top: 50px;
+    width: 455px;
+    height: 350px;
+}
+.architect-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+}
+.architect-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition:  0.5s, 0.5s;
+    opacity: 0.7;
+}
+
+.architect-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/* facts section styles  */
+
