@@ -83,7 +83,7 @@ section{
 .banner .banner-title{
    
     margin-top: 102px;
-    width: 862px;
+   
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
@@ -93,7 +93,7 @@ section{
 
 .banner .banner-text{
 
-    width: 868px;
+   
     line-height: 26px;
     text-align: center;
     color: #727272;
@@ -224,6 +224,7 @@ section{
     margin-bottom: 50px;
 }
 .architect-projects .architect-projects-img{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -266,6 +267,7 @@ section{
     font-weight: 700;
     font-size: 35px;
     color: #131313;
+    margin-bottom: 24px;
 
 }
 .facts .facts-text-main{
@@ -299,4 +301,80 @@ section{
 .facts-container .facts-details:hover{
     transform: rotate(45deg);
 }
+/* footer styles  */
 
+/* sponsor styles  */
+.sponsor .sponsor-details{
+    display: flex;
+    flex-direction: column;
+}
+.sponsor-details .sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 24px;
+
+}
+
+.sponsor-details .sponsor-text{
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 50px;
+}
+.sponsor-details .sponsor-icons{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   grid-column-gap: 156px;
+}
+
+/* copyright styles */
+.copyright{
+    position: absolute;
+width: 900px;
+height: 100px;
+left: 400px;
+top: 6300px;
+text-align: center;
+background: #FFF4E7;
+border-radius: 8px;
+margin-bottom: 200px;
+}
+
+.copyright p{
+    margin-top: 40px;
+}
+
+/* media queries  */
+
+@media only screen and (max-width: 688px) {
+    .navbar{
+        gap: 30px;
+        flex-direction: column;
+       align-items: center;
+    }
+    .navbar .navbar-links{
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        grid-row-gap: 20px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .banner{
+        display: grid;
+        grid-template-rows: repeat(4,1fr) ;
+        align-items: center;
+        grid-row-gap: 30px;
+    }
+    .features .container{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-row-gap: 73px;
+    }
+    .features .container .features-img{
+       
+        grid-template-rows: repeat(4,1fr);
+        grid-row-gap: 24px;
+    } 
+}
